@@ -81,9 +81,15 @@ def authenticate(fn,current_password = '123' , user_password = '123'):
 
 @authenticate
 def add(a, b ):
+    ''' 
+    This function preforms the addition on the given inputs
+    '''
     return a + b
 
 def timed(fn):
+    '''
+    This decorator helps us to know the execution for the given function.
+    '''
     from time import perf_counter
     from functools import wraps
 
