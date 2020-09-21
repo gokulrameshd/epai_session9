@@ -31,5 +31,8 @@ def test_auth_add():
 
 def test_mul_timed():
     ret = mul(2,3)
-    ret == 6
+    ret[0] == 6
 
+def test_mul_timed_1():
+    ret = mul(2,3)
+    int(ret[1]) < 1

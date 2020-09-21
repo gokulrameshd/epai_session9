@@ -88,7 +88,7 @@ def add(a, b ):
 
 def timed(fn):
     '''
-    This decorator helps us to know the execution for the given function.
+    This decorator helps us to know the execution time taken for the given function.
     '''
     from time import perf_counter
     from functools import wraps
@@ -107,12 +107,15 @@ def timed(fn):
 
         print(f'{fn.__name__}({args_str}) took {elapsed} seconds')
 
-        return result
+        return result , elapsed
     # inner = wraps(fn)(inner)
     return inner
 
 @timed
 def mul(a,b):
+    '''
+    This function performs multiplication on the given inputs
+    '''
     c = a*b
     return c
 
