@@ -18,6 +18,10 @@ def test_log_div():
     ret = div(a= 21,b = 3)
     assert type(ret) == tuple 
 
+def test_log_div():
+    ret = div(a= 21,b = 3)
+    assert ret[1] == 7
+
 
 def test_auth_add():
     # ret = add(3,5)
@@ -28,3 +32,4 @@ def test_auth_add():
 def test_mul_timed():
     ret = mul(2,3)
     ret == 6
+

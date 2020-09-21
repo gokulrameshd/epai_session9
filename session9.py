@@ -62,6 +62,10 @@ def set_password():
 current_password = set_password()
 
 def authenticate(fn,current_password = '123' , user_password = '123'):
+    """ 
+    This decorator check for the authentication.
+    It takes the user password and checks with the current password.
+    """
     cnt = 0
     
     if user_password == current_password:
